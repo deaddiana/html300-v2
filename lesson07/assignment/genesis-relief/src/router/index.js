@@ -1,27 +1,51 @@
+import HomePage from '@/components/HomePage'
+import AboutPage from '@/components/AboutPage'
+import DisastersPage from '@/components/DisastersPage'
+import NewsletterPage from '@/components/NewsletterPage'
+import UpdatesPage from '@/components/UpdatesPage'
+import ResourcesPage from '@/components/ResourcesPage'
+
+
+
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Router from 'vue-router'
 
-Vue.use(VueRouter)
+// use router
+Vue.use(Router)
 
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
-]
 
-const router = new VueRouter({
-  routes
-})
 
-export default router
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'HomePage',
+      component: Homepage
+    },
+    {
+      path: '/',
+      name: 'AboutPage',
+      component: AboutPage
+    },
+    {
+      path: '/',
+      name: 'DisastersPage',
+      component: DisastersPage
+    },
+    {
+      path: '/',
+      name: 'NewsletterPage',
+      component: NewsletterPage
+    },
+    {
+      path: '/',
+      name: 'UpdatesPage',
+      component: UpdatesPage
+    },
+    {
+      path: '/',
+      name: 'ResourcesPage',
+      component: ResourcesPage
+    }
+  ]
+});

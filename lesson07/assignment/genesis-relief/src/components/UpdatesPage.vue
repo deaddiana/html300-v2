@@ -1,6 +1,6 @@
 <template>
 <div class="resources">
-  <h1>{{title}} hi</h1>
+  <h1>{{titles}}</h1>
 
   <div class="row">
     <div class="col-md-4 col-lg4" v-for="(data,index) in articles" :key="index">
@@ -13,10 +13,10 @@
 
 <script>
 export default {
-  name: 'ResourcesPage',
+  name: 'UpdatesPage',
   data() {
     return {
-      title: 'Resources',
+      title: 'UpdatesPage',
       articles: [{
           articleTitle: "Article 1",
           image: require('../assets/article1.jpg'),

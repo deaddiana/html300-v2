@@ -1,55 +1,60 @@
-import Vue from 'vue'
-import App from './App.vue'
-import VueRouter from 'vue-router'
+import Vue from 'vue';
+import App from './App.vue';
+import VueRouter from 'vue-router';
 
-import HomePage from './components/HomePage.vue'
-import DisasterPage from './components/DisasterPage.vue'
-import AboutPage from './components/AboutPage.vue'
-import ResourcesPage from './components/ResourcesPage.vue'
-import UpdatesPage from './components/UpdatesPage.vue'
-import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import HomePage from '@/components/HomePage';
+import AboutPage from '@/components/AboutPage';
+import DisastersPage from '@/components/DisastersPage';
+import NewsletterPage from '@/components/NewsletterPage';
+import UpdatesPage from '@/components/UpdatesPage';
+import ResourcesPage from '@/components/ResourcesPage';
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
-Vue.use(VueRouter)
 
+// use router
+Vue.use(VueRouter);
 
 const routes = [
-{ path: '/',
-    name: 'HomePage',
-    component: HomePage},
+    {
+      path: '/',
+      name: 'HomePage',
+      component: HomePage
+    },
+    {
+      path: '/About',
+      name: 'AboutPage',
+      component: AboutPage
+    },
+    {
+      path: '/Disasters',
+      name: 'DisastersPage',
+      component: DisastersPage
+    },
+    {
+      path: '/Newsletter',
+      name: 'NewsletterPage',
+      component: NewsletterPage
+    },
+    {
+      path: '/Updates',
+      name: 'UpdatesPage',
+      component: UpdatesPage
+    },
+    {
+      path: '/Resources',
+      name: 'ResourcesPage',
+      component: ResourcesPage
+    }
+  ];
 
-    {   path: '/AboutPage',
-    name: 'AboutPage',
-    component:  AboutPage},
+  var router = new VueRouter({
+    routes: routes,
 
-    {   path: '/DisastersPage',
-    name: 'DisastersPage',
-    component:  DisastersPage},
-
-    {   path: '/ResourcesPage',
-    name: 'ResourcesPage',
-    component:  ResourcesPage},
-
-    {   path: '/UpdatesPage',
-    name: 'UpdatesPage',
-    component:  UpdatesPage},
-
-    {   path: '/NewsletterPage',
-    name: 'NewsletterPage',
-    component:  NewsletterPage},
-
-]
-const router = new VueRouter({
-  routes,
-  mode: 'history'
-})
-
-
+  })
 
 new Vue({
-  el: '#app',
   router,
   render: h => h(App)
-})
+}).$mount('#app');

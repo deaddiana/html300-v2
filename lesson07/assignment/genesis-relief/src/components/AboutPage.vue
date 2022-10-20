@@ -1,15 +1,17 @@
 <template>
- <div class="newsletter">
-  <h1>{{newsletter}}</h1>
+ <div class="about">
+  <h1>{{about}}HI</h1>
  </div>
 </template>
 
+
+
 <script>
  export default{
-  name:'NewletterPage',
+  name:'AboutPage',
   data (){
    return{
-    title:'Newsletter'
+    title:'About'
    }
   }
  }
