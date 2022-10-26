@@ -1,3 +1,4 @@
+
 <template>
  <div class="disasters">
   <h1>{{disasters}}</h1>
@@ -5,6 +6,7 @@
 </template>
 
 <script>
+
  export default{
   name:'DisastersPage',
   data (){

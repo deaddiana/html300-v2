@@ -15,7 +15,8 @@
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <!-- <input name="name" v-model="form.name" v-validate="'required|min:3'" v-bind:class="{'is-danger': errors.has('name')}" class="input" type="text" placeholder="Full name"> -->
+              <input name="name" v-model="form.name" class="input" type="text" placeholder="Full name">
+              <!--<input name="name" v-model="form.name" v-validate="'required|min:3'" v-bind:class="{'is-danger': errors.has('name')}" class="input" type="text" placeholder="Full name"> -->
             </div>
             <!-- <p class="help is-danger" v-show="errors.has('name')">
               {{ errors.first('name') }}
@@ -25,6 +26,7 @@
           <div class="field">
             <label class="label">Message</label>
             <div class="control">
+              <textarea name="message" class="textarea" placeholder="Message"></textarea>
               <!-- <textarea name="message" class="textarea" v-validate="'required|additional'" placeholder="Message" v-bind:class="{'is-danger': errors.has('message')}" v-model="form.message"></textarea> -->
             </div>
             <!-- <p class="help is-danger" v-show="errors.has('message')">
@@ -84,7 +86,7 @@
             </div>
           </div>
 
-          <!-- <div class="field">
+          <div class="field">
             <label><strong>Can we contact you directly?</strong></label>
             <div class="control">
               <label class="radio">
@@ -96,15 +98,9 @@
                 NO THANK YOU!
               </label>
             </div>
-          </div> -->
-
-          <div class="field is-grouped">
-            <div class="control">
-              <!-- <button v-bind:disabled="errors.any()" class="button is-primary">
-                Submit
-              </button> -->
-            </div>
           </div>
+
+
 
         </form>
       </section>
@@ -167,11 +163,44 @@ export default {
 
 
 
-
 <style scoped>
-#results {
+  #results {
   position: fixed;
   right: 0;
   top: 10%;
+  }
+
+ form div {
+  margin-top: 1rem;
+}
+
+label,
+input,
+textarea
+button,
+select{
+  font-size: 1.3rem;
+  line-height: 1.2
+}
+
+form {
+  width: 30em;
+  max-width: 90%;
+  margin: 0 2rem;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+input,
+textarea {
+  padding: 0.4rem;
+  width: 100%;
+}
+
+button {
+  margin-top: 2rem;
 }
 </style>

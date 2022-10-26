@@ -1,6 +1,16 @@
 <template>
-  <div class="container-fluid m-0 p-0">
-    <h1>Home</h1>
+  <div>
+    <b-jumbotron bg-variant="info" text-variant="white" border-variant="dark">
+      <template #header>Genesis Relief</template>
+
+      <template #lead>
+        Humanitarian Resources During Global Disasters and Crisis
+      </template>
+    <hr class="my-4">
+      <p>
+        <b-button variant="primary" href="#">EXPLORE!</b-button>
+      </p>
+    </b-jumbotron>
   </div>
 </template>
 

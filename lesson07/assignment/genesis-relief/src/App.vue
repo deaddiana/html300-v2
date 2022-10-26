@@ -19,6 +19,9 @@
       <li class="nav-item">
         <router-link class="nav-link" to="/Resources">Resources</router-link>
       </li>
+      <li class="nav-item">
+        <router-link class="nav-link" to="/ReliefWeb">ReliefWeb</router-link>
+      </li>
     </ul>
     <router-view> </router-view>
   </div>
@@ -31,8 +34,17 @@ export default {
 </script>
 
 
+
 <style>
 #app {
 
 }
+.nav-item {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 </style>

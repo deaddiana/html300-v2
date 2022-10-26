@@ -1,11 +1,11 @@
 <template>
 <div class="resources">
-  <h1>{{title}} hi</h1>
+  <h1>{{title}}</h1>
 
   <div class="row">
-    <div class="col-md-4 col-lg4" v-for="(data,index) in articles" :key="index">
-      <img :src="data.image" class="img-fluid">
-      <h3>{{data.articleTitle}}</h3>
+    <div class="col-md-4 col-lg4" v-for="(data,index) in companies" :key="index">
+
+      <h3>{{data.companyName}}</h3>
     </div>
   </div>
 </div>
@@ -17,34 +17,29 @@ export default {
   data() {
     return {
       title: 'Resources',
-      articles: [{
-          articleTitle: "Article 1",
-          image: require('../assets/article1.jpg'),
+      companies: [{
+          companyName: "ReliefWeb",
           articleId: 1
+
         },
         {
-          articleTitle: "Article 2",
-          image: require('../assets/article2.jpg'),
+          companyName: "DirectRelief",
           articleId: 2
         },
         {
-          articleTitle: "Article 3",
-          image: require('../assets/article3.jpg'),
+          companyName: "Doctors Without Borders",
           articleId: 3
         },
         {
-          articleTitle: "Article 4",
-          image: require('../assets/article4.jpg'),
+          companyName: "Project Hope",
           articleId: 4
         },
         {
-          articleTitle: "Article 5",
-          image: require('../assets/article5.jpg'),
+          companyName: "Americares",
           articleId: 5
         },
         {
-          articleTitle: "Article 6",
-          image: require('../assets/article6.jpg'),
+          companyName: "MAP International",
           articleId: 6
         }
       ]
