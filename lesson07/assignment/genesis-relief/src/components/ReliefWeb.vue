@@ -13,8 +13,9 @@ ReliefWeb is a humanitarian information service provided by the United Nations O
  export default{
   name:'ReliefWeb',
   data (){
-   return{
-    title:'ReliefWeb'
+   return {
+    title:'ReliefWeb',
+    src: 'https://reliefweb.int/'
    }
   }
  }

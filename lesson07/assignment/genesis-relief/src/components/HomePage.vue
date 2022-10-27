@@ -2,13 +2,14 @@
   <div>
     <b-jumbotron bg-variant="info" text-variant="white" border-variant="dark">
       <template #header>Genesis Relief</template>
+      <img src="../assets/logo2.png" alt="my logo">
 
       <template #lead>
         Humanitarian Resources During Global Disasters and Crisis
       </template>
     <hr class="my-4">
       <p>
-        <b-button variant="primary" href="#">EXPLORE!</b-button>
+        <button @click="show = !show">Explore!</button>
       </p>
     </b-jumbotron>
   </div>
@@ -20,7 +21,8 @@ export default {
   name: 'HomePage',
   data () {
     return {
-      msg: 'Welcome to Genesis Relief'
+      msg: 'idk how to make this work',
+      show: true
     }
   }
 }

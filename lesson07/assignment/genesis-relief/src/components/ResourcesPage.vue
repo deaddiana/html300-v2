@@ -19,28 +19,39 @@ export default {
       title: 'Resources',
       companies: [{
           companyName: "ReliefWeb",
-          articleId: 1
+          companyId: 1,
+          //link:'https://reliefweb.int/'
 
         },
         {
           companyName: "DirectRelief",
-          articleId: 2
+          companyID: 2,
+          //link:'https://reliefweb.int/'
+
         },
         {
           companyName: "Doctors Without Borders",
-          articleId: 3
+          companyId: 3,
+          //link:'https://reliefweb.int/'
+
         },
         {
           companyName: "Project Hope",
-          articleId: 4
+          companyId: 4,
+          //link:'https://reliefweb.int/'
+
         },
         {
           companyName: "Americares",
-          articleId: 5
+          companyId: 5,
+          //link:'https://reliefweb.int/'
+
         },
         {
           companyName: "MAP International",
-          articleId: 6
+          companyId: 6,
+          //link:'https://reliefweb.int/'
+
         }
       ]
     }
