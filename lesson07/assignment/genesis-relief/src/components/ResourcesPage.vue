@@ -7,7 +7,7 @@
           <div class="card-body">
             <h3>{{data.companyName}}</h3>
               <p>{{data.description}}</p>
-                <p><a v-bind:href="data.website"></a></p>
+                <p><a v-bind:href="website"></a></p>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default {
       title: 'Resources',
       companies: [{
           companyName: 'ReliefWeb',
-          website: "https://reliefweb.int/",
+          website: 'https://reliefweb.int/',
           description: 'ReliefWeb is a humanitarian information portal founded in 1996.',
           companyId: 1
 

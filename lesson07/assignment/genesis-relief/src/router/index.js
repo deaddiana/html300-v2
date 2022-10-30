@@ -4,8 +4,8 @@ import DisastersPage from '@/components/DisastersPage'
 import NewsletterPage from '@/components/NewsletterPage'
 import UpdatesPage from '@/components/UpdatesPage'
 import ResourcesPage from '@/components/ResourcesPage'
-import DirectRelief from '@/components/DirectRelief'
-import DoctorsBorders from '@/components/DoctorsBorders'
+
+
 
 import Vue from 'vue'
 import Router from 'vue-router'

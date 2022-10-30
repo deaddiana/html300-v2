@@ -10,11 +10,8 @@ import UpdatesPage from '@/components/UpdatesPage';
 import ResourcesPage from '@/components/ResourcesPage';
 import ReliefWeb from '@/components/ReliefWeb'
 
-
-
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-
 
 
 // use router
