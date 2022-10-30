@@ -6,8 +6,7 @@
         <div class="card">
           <div class="card-body">
             <h3>{{data.companyName}}</h3>
-              <p>{{data.description}}</p>
-                <p><a v-bind:href="website"></a></p>
+                <p><a v-bind:href = "link" target = "_blank">{{data.description}}</a></p>
           </div>
         </div>
       </div>
@@ -22,28 +21,28 @@ export default {
       title: 'Resources',
       companies: [{
           companyName: 'ReliefWeb',
-          website: 'https://reliefweb.int/',
+          link: "https://reliefweb.int/",
           description: 'ReliefWeb is a humanitarian information portal founded in 1996.',
           companyId: 1
 
         },
         {
           companyName: "DirectRelief",
-          website: "https://reliefweb.int/",
+          link: "https://reliefweb.int/",
           description: 'DirectRelief information needs to be added',
           companyId: 2
 
         },
         {
           companyName: "Doctors Without Borders",
-          website: "https://reliefweb.int/",
+          link: "https://reliefweb.int/",
           description: 'Doctors Without Borders information needs to be added',
           companyId: 3
 
         },
         {
           companyName: "Project Hope",
-          website: "https://reliefweb.int/",
+          link: "https://reliefweb.int/",
           description: 'Project Hope information needs to be added',
 
           companyId: 4
@@ -51,7 +50,7 @@ export default {
         },
         {
           companyName: 'Americares',
-          website: "https://reliefweb.int/",
+          link: "https://reliefweb.int/",
           description: 'Americares information needs to be added',
 
           companyId: 5
@@ -59,7 +58,7 @@ export default {
         },
         {
           companyName: "MAP International",
-          website: "https://reliefweb.int/",
+          link: "https://reliefweb.int/",
           description: 'MAP International information needs to be added',
           companyId: 6
 
