@@ -1,7 +1,7 @@
 
 <template>
  <div class="disasters">
-  <h1>{{disasters}}</h1>
+  <h1>{{title}}</h1>
  </div>
 </template>
 
@@ -11,7 +11,7 @@
   name:'DisastersPage',
   data (){
    return{
-    title:'Disasters'
+    title:'lesson8 test'
    }
   }
  }

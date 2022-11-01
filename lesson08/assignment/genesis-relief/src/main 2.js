@@ -8,7 +8,7 @@ import DisastersPage from '@/components/DisastersPage';
 import NewsletterPage from '@/components/NewsletterPage';
 import UpdatesPage from '@/components/UpdatesPage';
 import ResourcesPage from '@/components/ResourcesPage';
-import HeaderCom from '@/components/HeaderCom';
+import ReliefWeb from '@/components/ReliefWeb'
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -49,9 +49,9 @@ const routes = [
       component: ResourcesPage
     },
     {
-      path: '/HeaderCom',
-      name: 'Header',
-      component: HeaderCom
+      path: '/ReliefWeb',
+      name: 'ReliefWebPage',
+      component: ReliefWeb
     }
   ];
 

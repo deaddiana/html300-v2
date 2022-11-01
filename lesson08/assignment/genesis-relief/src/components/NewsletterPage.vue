@@ -172,6 +172,7 @@ export default {
 
  form div {
   margin-top: 1rem;
+
 }
 
 label,
@@ -181,17 +182,21 @@ button,
 select{
   font-size: 1.3rem;
   line-height: 1.2
+
 }
 
 form {
   width: 30em;
   max-width: 90%;
   margin: 0 2rem;
+
 }
 
 label {
   margin-bottom: 0.4rem;
   display: block;
+  background-color: white;
+  padding: 0.4rem;
 }
 
 input,
@@ -202,5 +207,9 @@ textarea {
 
 button {
   margin-top: 2rem;
+}
+
+.section {
+  padding: 1em;
 }
 </style>
