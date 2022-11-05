@@ -6,7 +6,7 @@
         <div class="card">
           <div class="card-body">
             <h3>{{data.companyName}}</h3>
-                <p><a v-bind:href = "link" target = "_blank">{{data.description}}</a></p>
+                <p><a v-bind:href = "link" target ="_blank">{{data.description}}</a></p>
           </div>
         </div>
       </div>
